@@ -11,44 +11,34 @@ class Program
         string name = Console.ReadLine();
          static void Main(string[] args)
          //main game
-    {
-        Random randomGenerator = new Random();
-        int magicNumber = randomGenerator.Next(1, 101);
-
-        int guess = -1;
-
-        while (guess != magicNumber)
         {
-            Console.Write($"Dear{name}What is your guess? ");
-            guess = int.Parse(Console.ReadLine());
+            Random randomGenerator = new Random();
+            int magicNumber = randomGenerator.Next(1, 101);
 
-            if (magicNumber < guess)
-            {
-                Console.WriteLine("Lower");
-            }
-            else if (magicNumber > guess)
-            {
-                Console.WriteLine("Higher");
-            }
-            else
-            {
-                Console.WriteLine("You guessed it!");
-            }
+            int guess = -1;
 
-        }    
-        string response = "yes";
-
-            while (response == "yes")
+            while (guess != magicNumber)
             {
-                Console.Write($"Do you want to continue? ");
-                response = Console.ReadLine();
-        }       string response;
+                Console.Write($"Dear{name}What is your guess? ");
+                guess = int.Parse(Console.ReadLine());
 
-            do
-            {
-                Console.Write("Do you want to continue? ");
-                response = Console.ReadLine();
-            } while (response == "yes");
+                if (magicNumber=guess)
+                {
+                    Console.WriteLine("The magic Number and guess are egal")
                 }
+                else if(magicNumber < guess)
+                {
+                    Console.WriteLine("Lower");
+                }
+                else if (magicNumber > guess)
+                {
+                    Console.WriteLine("Higher");
+                }
+                else
+                {
+                    Console.WriteLine($"Congratulation dear{name}, You guessed it!");
+                }
+            }    
+        }
     }
 }

@@ -17,6 +17,6 @@ class Program
         Console.WriteLine($"Name:{name}")
         Console.WriteLine($"Adress:{Adress}")
         Console.WriteLine($"Cell:{Number}")
-        Console.Write("Thanks for playing my game, see you soon and Good By")
+        Console.Write("Thanks for playing my game, see you soon and Good Bye!")
     }
 }
