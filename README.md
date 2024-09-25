@@ -1,4 +1,4 @@
-# cse210-antoine mpinga kalambayi files
+# cse210-Antoine Mpinga Kalambayi files
 About this repository
 
 This repository contains the starter code for many different projects. They are arranged as follows:
